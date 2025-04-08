@@ -1,0 +1,14 @@
+# Arquivos temporarios
+*.tmp
+
+# Arquivos de compilação
+*.exe
+
+# Diretorio de dependencias
+node_modules/
+
+# Arquivos especifico com dados e senhas
+conexao.py
+
+#alterando
+.gitignore
