@@ -8,7 +8,7 @@ qtdpar = 0;
 qtdimpar = 0;
 let entrada = 0;
 for(let contador = 0; contador <= 5; contador++){
-    console.log(Number(prompt('Digite um numero:')))
+    entrada = (Number(prompt('Digite um numero:')))
     if(entrada % 2 == 0){
         somapar += entrada
         qtdpar++

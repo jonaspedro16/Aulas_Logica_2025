@@ -9,19 +9,29 @@ for (let i = 1; i <= 6; i++) {
 console.log(comidas)
 console.log(comidas[0])
 console.log(comidas[4])
+
 comidas[5] = ["Picanha"]
 console.log(comidas)
+
 comidas.push('Strogonoff')
 console.log(comidas)
+
 comidas.splice(5, 0, 'Hamburguer')
 console.log(comidas)
+
 comidas.shift()
 console.log(comidas)
+
 comidas.pop()
+
 console.log(comidas)
+
 console.log(comidas.slice(0,3))
+
 console.log(comidas.slice(3,7))
+
 console.log(comidas.length)
+
 comidas.reverse()
 console.log(comidas)
 
