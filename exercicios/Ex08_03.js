@@ -6,3 +6,4 @@ const prompt = require('prompt-sync')()
         console.log(mes)
     }
  }
+Teste
