@@ -1,15 +1,32 @@
-function gerarSenha(tamanho) {
-    let caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+[]{};:,.<>?";
-    let senha = "";
+function calcular(numero1, numero2, operador) {
+    let resultado;
 
-    for (let i = 0; i < tamanho; i++) {
-        let indice = Math.floor(Math.random() * caracteres.length);
-        senha += caracteres[indice];
+    switch (operador) {
+        case "+":
+            resultado = numero1 + numero2;
+            break;
+        case "-":
+            resultado = numero1 - numero2;
+            break;
+        case "*":
+            resultado = numero1 * numero2;
+            break;
+        case "/":
+            if (numero2 !== 0) {
+                resultado = numero1 / numero2;
+            } else {
+                return console.log("Erro: divisão por zero.");
+            }
+            break;
+        case "**":
+            resultado = numero1 ** numero2;
+            break;
+        default:
+            return console.log("Operador inválido.");
     }
 
-    console.log(`Senha gerada: ${senha}`);
-    return senha;
+    console.log(`${numero1} ${operador} ${numero2} = ${resultado}`);
 }
-
-gerarSenha(95)
-gerarSenha(24)
+calcular(2, 5, "*")
+calcular(10, 3, "+")
+calcular(4, 2, "**")
