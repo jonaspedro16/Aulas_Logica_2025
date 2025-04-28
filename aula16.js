@@ -21,4 +21,4 @@ function descriptografar(texto){
     }
     return resultado
 }
-console.log(descriptografar('VHQDL'))
+console.log(descriptografar('VHQDL'));
