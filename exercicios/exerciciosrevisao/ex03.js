@@ -1,0 +1,5 @@
+const prompt = require('prompt-sync')()
+let numero = Number(prompt("Insira o numero:"))
+let numero2 = Number(prompt("insira o proximo numero"))
+let divisao = (numero / numero2) 
+console.log(`A divisao é ${divisao}`)

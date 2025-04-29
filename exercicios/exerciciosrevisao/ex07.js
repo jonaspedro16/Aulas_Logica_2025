@@ -1,0 +1,13 @@
+const prompt = require('prompt-sync')();
+let ganhoporhora = Number(prompt('Digite quando voce ganha por hora'))
+let HorasMES = Number(prompt('Digite quantas horas voce trabalha no mes'))
+ let salarioBruto = (ganhoporhora + HorasMES)
+ console.log(`O salario bruto é ${salarioBruto}`)
+ let IR = (salarioBruto * 0.11)
+ console.log(`O imposto de renda é ${IR}`)
+ let inss = (salarioBruto * 0.08)
+ console.log(`o desconto do inss $${inss}`)
+ let sindicato = (salarioBruto * 0.05)
+ console.log(`o sindicato ${sindicato}`)
+ let salarioliquido = (salarioBruto - IR - inss - sindicato)
+ console.log(`o salarioliquido é ${salarioliquido}`)
